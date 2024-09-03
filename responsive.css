@@ -1,0 +1,226 @@
+/* media */
+@media only screen and (max-width: 1024px) {
+    .header .wrapper {
+        padding: 0 22px;
+    }
+
+    .home .wrapper {
+        padding: 0 22px;
+    }
+
+    .services .wrapper {
+        padding: 0 22px;
+    }
+
+    .menu .wrapper {
+        padding: 0 22px;
+    }
+
+    .header .wrapper .nav .rs {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header .wrapper {
+        padding: 0 22px;
+        width: 100%;
+    }
+
+    .header .wrapper .nav .rs {
+        position: fixed;
+        top: 200px;
+        left: -500px;
+        height: 400px;
+        background-color: #2e2e2ee0;
+        /* box-shadow: 0 0 10px #ccc; */
+        color: #fff;
+        display: inline-block;
+        width: 400px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid #2e2e2e;
+        flex-direction: column;
+        z-index: 1;
+        /* transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none; */
+        transition: all 0.3s ease;
+    }
+
+    .header .wrapper .nav .rs.active {
+        /* transform: scale(1); */
+        opacity: 1;
+        transition: 0.2s ease-out;
+        left: 200px;
+
+    }
+
+    /* 
+    .header .wrapper .nav .rs ul {
+        flex-direction: column;
+    }
+
+    .header .wrapper .nav .rs ul li {
+        margin-bottom: 20px;
+    } */
+    body.open .overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header .wrapper .nav .rs a {
+        font-size: 24px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .header .wrapper .nav .rs {}
+
+    /* .close_btn {
+        display: inline-block;
+        position: absolute;
+        top: 230px;
+        right: 180px;
+        width: 50px;
+        height: 50px;
+        background-color: #ed1f1f;
+        color: #fff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    } */
+
+    /* .close_btn {
+        display: inline-block;
+        position: absolute;
+        top: 230px;
+        right: 80px;
+        width: 50px;
+        height: 50px;
+        background-color: #ed1f1f;
+        color: #fff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    } */
+
+    .header .wrapper .nav .login {
+        display: none;
+    }
+
+    .header .wrapper .nav .menubar {
+        display: inline-block;
+    }
+
+
+
+    .header .wrapper .home {
+        flex-direction: column;
+    }
+
+    .header .wrapper .home .home_ls .heading_text {
+        font-size: 48px;
+        line-height: 70px;
+    }
+
+
+    .services .wrapper {
+        padding: 0 22px;
+    }
+
+    .services .wrapper .heading h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .services .wrapper .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .menu .wrapper {
+        padding: 0 22px;
+        width: 100%;
+    }
+
+    .menu .wrapper .slide {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about_us .wrapper {
+        padding: 0 22px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact .wrapper {
+        padding: 0 22px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .wrapper {
+        padding: 0 22px;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header .wrapper {
+        padding: 0 22px;
+        width: 100%;
+    }
+
+
+
+    .services .wrapper {
+        padding: 0 22px;
+    }
+
+    .services .wrapper .heading h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .services .wrapper .box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .menu .wrapper {
+        padding: 0 22px;
+        width: 100%;
+    }
+
+    .menu .wrapper .heading h1 {
+        width: 100%;
+        /* width: 550px; */
+        color: #2e2e2e;
+    }
+
+    .menu .wrapper .slide {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about_us .wrapper .ls .about_img img {
+        width: 350px;
+    }
+
+    .footer .wrapper {
+        padding: 0 22px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
